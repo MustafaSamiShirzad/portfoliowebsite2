@@ -1,5 +1,5 @@
 :root {
-  --blue: #1e90ff;
+  --blue: #6070ff;
 }
 
 * {
@@ -10,130 +10,170 @@
 }
 
 body {
-  background: #f4f5f7;
+  background-color: #e5e5e5;
+  overflow-x: hidden;
 }
 
-nav {
+/* header section */
+header {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: white;
+  width: 100vw;
 }
 
 .logo,
 .menu {
   color: var(--blue);
-  font-weight: 800;
-  text-shadow: 0 1px 10px;
+  font-weight: 1000;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.338);
+  font-size: 1.4rem;
 }
 
-.menu:hover {
-  color: #1e8fff89;
-  cursor: pointer;
-}
-
-.about_me {
-  background: url(bg.png);
-  min-height: 60vh;
+.headline_section {
+  background: url(/bg.png);
   background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 0 0 50px 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px 10px 50px;
+  border-radius: 0 0 20% 5%;
+  min-height: 70vh;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100vw;
 }
 
-.My_info {
-  text-align: left;
-  margin-left: 30px;
-  margin-right: 40%;
+.headline_section h1 {
+  padding-bottom: 20px;
+  font-size: 3rem;
 }
 
-.contact_me {
-  margin-left: 30px;
-  padding-top: 30px;
+.headline_section p {
+  width: 70vw;
 }
 
-.contact_me span {
+.headline_section span {
   color: var(--blue);
-  text-shadow: 0 1px 10px;
-  padding-left: 10px;
+  padding: 10px 0;
+  font-weight: 500;
 }
 
-.icons {
-  padding-top: 10px;
+.headline_section span:hover {
+  cursor: pointer;
+  text-shadow: 0 2px 10px;
 }
 
-.icons i {
-  padding-left: 10px;
+.headline_section ul i {
+  display: inline-flex;
+  padding-left: 5px;
+  font-size: 1.2em;
 }
 
-.cards {
-  min-height: 80vh;
+.headline_section ul i:hover {
+  cursor: pointer;
+  text-shadow: 0 2px 20px;
 }
 
-.card1 {
+/* middle section */
+.works {
+  min-height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(4/1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
   display: flex;
-  height: 40vh;
-  flex-wrap: wrap;
+  flex-direction: column;
   background-color: white;
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 20px;
-}
-
-.part1 img {
-  height: 200px;
+  min-height: 50vh;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgb(190, 181, 181);
-}
-
-.part2 {
-  margin-left: 10px;
-}
-
-.part2 span {
-  width: 30px;
-  font-size: 10px;
-}
-
-.card_part1 {
-  display: flex;
-  list-style: none;
-  font-size: 10px;
+  margin-top: 20px;
+  width: 80vw;
+  align-items: flex-start;
+  padding: 30px;
+  justify-content: center;
   gap: 10px;
 }
 
-.card_part1 li {
-  margin: 10px 0;
+.works .card img {
+  width: 100%;
 }
 
-.Card_part2 button,
-.see_project {
-  background-color: var(--blue);
-  color: white;
+.works .card .first_list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+.works .card .second_list button {
+  background-color: #ebebff;
   border: none;
-  border-radius: 05px;
   padding: 5px 10px;
-  box-shadow: 0 0 10px var(--blue);
-  margin-top: 20px;
+  margin: 10px 0;
+  color: var(--blue);
+  border-radius: 12px;
 }
 
-.main_footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 40vh;
-  background-color: white;
+.see_project {
+  width: 100px;
   margin-top: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  background-color: white;
+  color: var(--blue);
+  padding: 5px 0;
 }
 
-.footer_part1 {
-  display: flex;
+/* footer */
+footer {
+  display: grid;
+  grid-template-rows: repeat(3/1fr);
+  min-height: 50vh;
+  background-color: white;
+  border-radius: 5% 20% 5% 5%;
+  margin-top: 20px;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  padding: 10px 10vw;
+  gap: 20px;
 }
 
-.footer_part2 {
+footer .section1 span {
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.section1 {
+  padding: 30px 10px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lang {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  background-color: #e5e5e5;
+  border-radius: 12px;
+  padding: 5px 10px;
+  font-weight: 500;
+  gap: 20px;
+}
+
+.frameworks,
+.skills {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 5px 0;
+  border-bottom: 2px solid rgb(241, 235, 235);
+  font-size: 20px;
 }
