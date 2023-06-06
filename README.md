@@ -5,14 +5,14 @@
 <div align="center">
   
 
-  <h3><b>Portifolio Mobile Website README.md</b></h3>
+  <h3><b>Portifolio Mobile Website2 README.md</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Portifolio Mobile Website \] ](#-portifolio-mobile-website--)
+- [📖 \[Portifolio Mobile Website \] ](#-portifolio-mobile-website2--)
   - [🛠 Built With **HTML and CSS**](#-built-with-html-and-css)
     - [Tech Stack **HTML and CSS**](#tech-stack-html-and-css)
     - [Key Features ](#key-features-)
@@ -28,7 +28,7 @@
 
 
 # 📖 [Portifolio Mobile Website ] <a name="about-project"></a>
-**Portifolio Mobile Website** is a project under microverse Module 1 block ! aimed at testing my knowledge about the concepts learnt and to help me build a website to display my work so that I stand out in the Job market.
+**Portifolio Mobile Website2** is a project under microverse Module 1 block ! aimed at testing my knowledge about the concepts learnt and to help me build a website to display my work so that I stand out in the Job market.
 This project is meant to run on all devices but this in particular is a mobile version of it.
 
 click on here to reach me: https://github.com/MustafaSamiShirzad
@@ -54,7 +54,7 @@ In order to run this project you need: A web browser.
 Clone this repository to your desired folder:
 cd Module_1 
 
-https://github.com/MustafaSamiShirzad/Portifoliowebsite.git
+https://github.com/MustafaSamiShirzad/Portifoliowebsite2.git
 
 ### Install
 
@@ -72,8 +72,11 @@ To run the project, execute the following command:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **MustafaShirzad**
+👤 **Karim Barragan**
 
 - GitHub: @Mustafashirzad
+-GitHub:@Rebelzob
+
 
 
 If you like this project like it and give me a follow.
@@ -81,7 +84,8 @@ If you like this project like it and give me a follow.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-It was a solo effort with consultation from resources.
+Karim barragan @Rebelzob
+Mustafa shirzad @MustafaSamiShirzad
 
 
 
