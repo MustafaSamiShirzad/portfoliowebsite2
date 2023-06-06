@@ -131,7 +131,7 @@ header {
 footer {
   display: grid;
   grid-template-rows: repeat(3/1fr);
-  min-height: 50vh;
+  min-height: 60vh;
   background-color: white;
   border-radius: 5% 20% 5% 5%;
   margin-top: 20px;
@@ -169,11 +169,50 @@ footer .section1 .span {
   gap: 20px;
 }
 
-.frameworks,
+.frameworks{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px 20px 0px;
+  border-bottom: 2px solid rgb(241, 235, 235);
+  font-size: 20px;
+
+}
 .skills {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px 5px 0;
+  padding: 10px 30px 20px 0px;
   border-bottom: 2px solid rgb(241, 235, 235);
   font-size: 20px;
+  margin-bottom:300px;
+}
+.form_section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:80vh;
+  background-color: var(--blue);
+  background-image: url(/imgs/contact\ form\ shapes-mobile.svg);
+  background-repeat: no-repeat;
+  background-position-x:right ;
+  border-radius:10% 0px ;
+  margin-top:-100px;
+  color:white;
+  padding:0px 30px;
+  
+}
+.form_section h3{
+  font-size:3em;
+
+}
+.form_section p{
+  
+}
+.form{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
