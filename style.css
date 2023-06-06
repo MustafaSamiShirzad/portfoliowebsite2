@@ -203,16 +203,58 @@ footer .section1 .span {
 }
 .form_section h3{
   font-size:3em;
-
+  padding-bottom: 12px;
 }
 .form_section p{
-  
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 28px;
+  padding-bottom: 52px;
 }
 .form{
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+  gap: 20px;
+  text-align: left;
+}
+
+#email {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border-radius: 5px;
+  height: 48px;
+  width: 327px;
+  padding: 15px 38px 15px 16px;
+
+}
+
+#name {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+  border-radius: 5px;
+  height: 48px;
+  width: 327px;
+  padding: 15px 38px 15px 16px;
+}
+
+#message:focus {
+  outline: none;
+}
+
+#message {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  height: 170px;
+  width: 327px;
+  border-radius: 8px;
 }
