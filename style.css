@@ -141,7 +141,7 @@ footer {
   gap: 20px;
 }
 
-footer .section1 span {
+footer .section1 .span {
   color: var(--blue);
   font-weight: 500;
 }
