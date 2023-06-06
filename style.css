@@ -169,50 +169,53 @@ footer .section1 .span {
   gap: 20px;
 }
 
-.frameworks{
+.frameworks {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px 20px 0px;
+  padding: 10px 30px 20px 0;
   border-bottom: 2px solid rgb(241, 235, 235);
   font-size: 20px;
-
 }
+
 .skills {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px 20px 0px;
+  padding: 10px 30px 20px 0;
   border-bottom: 2px solid rgb(241, 235, 235);
   font-size: 20px;
-  margin-bottom:300px;
+  margin-bottom: 300px;
 }
-.form_section{
+
+.form_section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:80vh;
+  height: 80vh;
   background-color: var(--blue);
   background-image: url(/imgs/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
-  background-position-x:right ;
-  border-radius:10% 0px ;
-  margin-top:-100px;
-  color:white;
-  padding:0px 30px;
-  
+  background-position-x: right;
+  border-radius: 10% 0;
+  margin-top: -100px;
+  color: white;
+  padding: 0 30px;
 }
-.form_section h3{
-  font-size:3em;
+
+.form_section h3 {
+  font-size: 3em;
   padding-bottom: 12px;
 }
-.form_section p{
+
+.form_section p {
   color: white;
   text-align: center;
   font-size: 1.5em;
   line-height: 28px;
   padding-bottom: 52px;
 }
-.form{
+
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,7 +234,7 @@ footer .section1 .span {
   height: 48px;
   width: 327px;
   padding: 15px 38px 15px 16px;
-
+  border-style: none;
 }
 
 #name {
@@ -244,17 +247,30 @@ footer .section1 .span {
   height: 48px;
   width: 327px;
   padding: 15px 38px 15px 16px;
-}
-
-#message:focus {
-  outline: none;
+  border-style: none;
 }
 
 #message {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 17px;
-  height: 170px;
-  width: 327px;
+
+  /* height: 170px; */
+
+  /* width: 327px; */
+  padding: 10px 120px 160px 120px;
   border-radius: 8px;
+  border-style: none;
+  padding-left: 10px;
+}
+
+.form_button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--blue);
+  border: none;
+  font-weight: 500;
+  font-size: 1.3em;
+  position: relative;
+  right: 80px;
 }
