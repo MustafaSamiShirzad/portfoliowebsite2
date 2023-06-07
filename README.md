@@ -23,6 +23,8 @@
     - [Usage](#usage)
   - [🔭 Future Features ](#-future-features-)
   - [👥 Authors ](#-authors-)
+  - [🤝 Contributing](#contributing)
+  - [⭐️ Show your support](#support)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
@@ -78,14 +80,27 @@ To run the project, execute the following command:
 -GitHub:@Rebelzob
 
 
+If you like this project like it and give us a follow.
 
-If you like this project like it and give me a follow.
+## 🤝 Contributing <a name="contributing"></a>
 
+Contributions, were made as this was a pair programming project.
+- GitHub: @Mustafashirzad
+-GitHub:@Rebelzob
+
+Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 Karim barragan @Rebelzob
 Mustafa shirzad @MustafaSamiShirzad
+
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+-Karim barragan @Rebelzob
+-Mustafa shirzad @MustafaSamiShirzad
+
 
 
 
@@ -94,4 +109,3 @@ Mustafa shirzad @MustafaSamiShirzad
 This project is [MIT](./LICENSE) licensed.
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
