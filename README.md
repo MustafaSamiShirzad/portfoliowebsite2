@@ -45,7 +45,7 @@ click on here to reach me: https://github.com/MustafaSamiShirzad
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> As the project is in its inital stages after approval it will be live and a link will be added here
+> As the project is in the inital stages after approval it will be live and a link will be added here
 
 
 
