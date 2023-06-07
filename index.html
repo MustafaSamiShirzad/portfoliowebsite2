@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website 2</title>
     <link rel="stylesheet" href="style.css">
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
-   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>                                   
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                              
 </head>
 <body>
     <!-- header section -->
     <header>
-        <div class="logo">MY LOGO</div>
+        <div class="logo">My Logo</div>
         <div class="menu">&#9776;</div>
+        <div class="Desktop_menu">
+            <ul>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
     </header>
     <!-- main section -->
     <main>
         <section class="headline_section">
-            <h1>I'm Mustafa <br> Glad to see you!</h1>
+            <h1>I'm Mustafa. <br> Glad to see you!</h1>
             <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
            <span>
             LET'S CONNECT
@@ -27,13 +33,17 @@
                 <i class='fa fa-twitter'></i>
                 <i class='fa fa-linkedin'></i>
                 <i class='fa fa-medium'></i>
-                <i class='fa fa-angellist'></i>
                 <i class='fa fa-github'></i>
+                <i class='fa fa-angellist'></i>
             </ul>
         </section>
         <section class="works">
             <div class="card1 card">
-                <img src="/imgs/Snapshoot Portfolio(2).png" alt="">
+                <div class="card-img">
+                    <img src="/imgs/Snapshoot Portfolio(2).png" alt="">
+                </div>
+                <!-- card one -->
+               <div class="card-info">
                 <h1>Tonic</h1>
                 <ul class="first_list">
                     <li>CANOPY</li>
@@ -48,8 +58,13 @@
                 </ul>
                 <button class="see_project">See project</button>
             </div>
+            </div>
+            <!-- card two -->
             <div class="card2 card">
-                <img src="/imgs/Snapshoot Portfolio(3).png" alt="">
+                <div class="card-img">
+                    <img src="/imgs/Snapshoot Portfolio(3).png" alt="">
+                </div>
+                <div class="card-info">
                 <h1>Multi-Post
                     Stories</h1>
                 <ul class="first_list">
@@ -64,10 +79,15 @@
                     <button>javascript</button>
                 </ul>
                 <button class="see_project">See project</button>
+                </div>
             </div>
+            <!-- card three -->
             <div class="card3 card">
-                <img src="/imgs/Snapshoot Portfolio.png" alt="">
-                <h1>Tonic</h1>
+                <div class="card-img">
+                    <img src="/imgs/Snapshoot Portfolio(2).png" alt="">
+                </div>
+                <div class="card-info">
+                <h1>Facebook 360</h1>
                 <ul class="first_list">
                     <li>CANOPY</li>
                     <li>Back End Dev</li>
@@ -81,8 +101,13 @@
                 </ul>
                 <button class="see_project">See project</button>
             </div>
+            </div>
+            <!-- card four -->
             <div class="card4 card">
-                <img src="/imgs/Snapshoot Portfolio(1).png" alt="">
+                <div class="card-img">
+                    <img src="/imgs/Snapshoot Portfolio(1).png" alt="">
+                </div>
+                <div class="card-info">
                 <h1>Multi-Post
                     Stories</h1>
                 <ul class="first_list">
@@ -97,14 +122,14 @@
                     <button>javascript</button>
                 </ul>
                 <button class="see_project">See project</button>
-
+            </div>
             </div>
         </section>
     </main>
     <!-- footer -->
     <footer>
-        <section class="section1">
-            <h1>About Myself</h1>
+        <div class="section1">
+            <h3>About Myself</h3>
             <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
             <span class="span">LET’S CONNECT</span>
             <ul class="icons">
@@ -117,11 +142,13 @@
             <button class="see_project">
                 Get my resume
             </button>
-        </section>
-        <section class="section2">
-            <h1>
+        </div>
+        <div class="section2">
+           <div class="section22">
+            <h3>
                 Languages
-            </h1>
+            </h3>
+            <div class="lang-div">
             <div class="lang">
                 <img src="/imgs/Ellipse 1 (2).png" alt=""></img>
                 <span>html</span>
@@ -134,8 +161,9 @@
                 <img src="/imgs/Ellipse 1.png" alt=""></img>
                 <span>javascript</span>
             </div>
-        </section>
-        <section class="section3">
+        </div>
+    </div>
+    <div class="frame-skill">
             <div class="frameworks">
                 <span>Frameworks</span>
                 <span>&#10095;</span>
@@ -144,7 +172,8 @@
                 <span>Skills</span>
                 <span>&#10095;</span>
             </div>
-        </section>
+        </div>
+    </div>
     </footer>
     <section class="form_section">
         <h3>

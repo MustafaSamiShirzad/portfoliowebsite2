@@ -1,8 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
   --blue: #6070ff;
+  --darkesh: #091e42;
 }
 
 * {
@@ -21,7 +21,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  align-items: center;
   background-color: white;
   width: 100vw;
 }
@@ -35,12 +36,14 @@ header {
 }
 
 .headline_section {
-  background: url(/bg.png);
+  background: url(/bg.svg);
+  background-color: white;
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   padding: 10px 20px 10px 50px;
-  border-radius: 0 0 20% 5%;
+  border-radius: 0 0 0% 5%;
   min-height: 70vh;
   align-items: flex-start;
   justify-content: center;
@@ -50,6 +53,7 @@ header {
 .headline_section h1 {
   padding-bottom: 20px;
   font-size: 3rem;
+  font-weight: 1000;
 }
 
 .headline_section p {
@@ -99,9 +103,10 @@ header {
   padding: 30px;
   justify-content: center;
   gap: 10px;
+  color: var(--darkesh);
 }
 
-.works .card img {
+.works .card-img img {
   width: 100%;
 }
 
@@ -109,6 +114,12 @@ header {
   display: flex;
   list-style: none;
   gap: 10px;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0 0 10px blue;
 }
 
 .works .card .second_list button {
@@ -136,12 +147,21 @@ footer {
   grid-template-rows: repeat(3/1fr);
   min-height: 60vh;
   background-color: white;
-  border-radius: 5% 20% 5% 5%;
+  border-radius: 0% 10% 5% 5%;
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  padding: 10px 10vw;
+  padding: 150px 10vw 150px 10vw;
   gap: 20px;
+}
+
+.icons {
+  color: #505f79;
+  font-size: 1.5em;
+}
+
+.fa {
+  padding-left: 10px;
 }
 
 footer .section1 .span {
@@ -156,37 +176,54 @@ footer .section1 .span {
   gap: 10px;
 }
 
+.section1 h3 {
+  font-size: 3em;
+  font-weight: 1000;
+}
+
+.section1 p {
+  display: inline;
+}
+
 .section2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.lang-div {
+  display: flex;
+  gap: 0;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.section22 h3 {
+  color: #344563;
+  font-weight: 1000;
+}
+
 .lang {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
   border-radius: 12px;
   padding: 5px 10px;
   font-weight: 500;
+  width: 80%;
+  height: 15vh;
+  margin: 5px 0;
   gap: 20px;
 }
 
+.skills,
 .frameworks {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px 20px 0;
   border-bottom: 2px solid rgb(241, 235, 235);
   font-size: 20px;
-}
-
-.skills {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px 20px 0;
-  border-bottom: 2px solid rgb(241, 235, 235);
-  font-size: 20px;
-  margin-bottom: 300px;
 }
 
 .form_section {
@@ -285,4 +322,156 @@ footer .section1 .span {
   border-radius: 10px;
   position: relative;
   top: 20px;
+}
+
+.Desktop_menu {
+  display: none;
+}
+
+/* media queries started  */
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .Desktop_menu {
+    display: inline;
+  }
+
+  .logo {
+    font-weight: 1000;
+  }
+
+  header {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    gap: 30%;
+  }
+
+  .Desktop_menu ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .headline_section {
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 300px;
+    color: #091e42;
+    background-size: auto;
+    background-position: center center;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+  }
+
+  .headline_section p {
+    width: 50vw;
+    font-size: 1.2em;
+    color: var(--darkesh);
+    letter-spacing: 1px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-areas: 'image content-info';
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card-img {
+    grid-area: image;
+  }
+
+  .card-info {
+    grid-area: content-info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .card-info p {
+    padding-right: 10%;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+  }
+
+  .section1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .section2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lang-div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .lang {
+    width: 7vw;
+    flex-direction: column;
+    font-weight: 700;
+    color: #161642;
+  }
+
+  .frame-skill {
+    width: 7vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame-skill .frameworks {
+    gap: 29vw;
+    width: 40vw;
+    position: relative;
+    right: 100%;
+    border-bottom: 3px solid #e5e5e5;
+  }
+
+  .frame-skill .skills {
+    gap: 35vw;
+    width: 40vw;
+    position: relative;
+    right: 100%;
+    border-bottom: 3px solid #e5e5e5;
+  }
+
+  .form_section p {
+    width: 38vw;
+  }
+
+  .form_button {
+    position: relative;
+    left: 1%;
+  }
+
+  .horizontal {
+    display: none;
+  }
+
+  .see_project {
+    width: 10vw;
+    padding: 10px 0;
+  }
 }
