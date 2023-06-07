@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website 2</title>
     <link rel="stylesheet" href="style.css">
-   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>                                     
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>  
+   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>                                   
 </head>
 <body>
     <!-- header section -->
@@ -154,11 +155,14 @@
 I’d love to help with it!
         </p>
     <form action="https://formspree.io/f/mknalqrn" class="form" method="post">
-        
-        <input name="Email" id="email" type="email" required placeholder="Email">
+        <label for="name"></label>
         <input name="name" id="name" type="text" required maxlength="30" placeholder="Name">
-        <input name="message" id="message" type="text" maxlength="500"  placeholder="Write your message here...">
+        <label for="email"></label>
+        <input name="Email" id="email" type="email" required placeholder="Email">
+        <label for="message"></label>
+        <textarea name="message" id="message" type="text" maxlength="500"  placeholder="Write your message here..."></textarea>
         <button type="submit" class="form_button">Get in touch</button>
+        <center><div class="horizontal"></div></center>
     </form>
 </section>
 </body>
