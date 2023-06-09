@@ -139,7 +139,6 @@ button:hover {
   background-color: #f7f7f9;
 }
 
-
 .see_project {
   width: 100px;
   margin-top: 10px;
@@ -148,13 +147,13 @@ button:hover {
   background-color: white;
   color: var(--blue);
   padding: 5px 0;
-  transition:all .5s ease-in;
-
+  transition: all 0.5s ease-in;
 }
-.see_project:hover{
-  color:var(--blue);
+
+.see_project:hover {
+  color: var(--blue);
   background-color: rgb(230, 225, 225);
-  border:var(--blue);
+  border: var(--blue);
 }
 
 /* footer */
@@ -465,6 +464,7 @@ footer .section1 .span {
     flex-direction: column;
     align-items: flex-start;
   }
+
   footer {
     display: flex;
     width: 100vw;
@@ -544,5 +544,3 @@ footer .section1 .span {
     background-color: var(--blue);
   }
 }
-
-
