@@ -139,6 +139,13 @@ button:hover {
   background-color: white;
   color: var(--blue);
   padding: 5px 0;
+  transition:all .5s ease-in;
+
+}
+.see_project:hover{
+  color:var(--blue);
+  background-color: rgb(230, 225, 225);
+  border:var(--blue);
 }
 
 /* footer */
@@ -449,7 +456,6 @@ footer .section1 .span {
     flex-direction: column;
     align-items: flex-start;
   }
-
   footer {
     display: flex;
     width: 100vw;
@@ -504,6 +510,8 @@ footer .section1 .span {
   }
 
   .form_section {
+    background-image: url(imgs/contact\ form\ background\ shapes.svg);
+    background-position: center center;
     width: 100vw;
   }
 
@@ -527,3 +535,5 @@ footer .section1 .span {
     background-color: var(--blue);
   }
 }
+
+
