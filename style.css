@@ -466,7 +466,7 @@ footer .section1 .span {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    width: 60%;
+    width: 80%;
   }
 
   .lang-div {
@@ -476,9 +476,10 @@ footer .section1 .span {
   }
 
   .lang {
-    width: 8vw;
+    width: 122px;
+    height: 120px;
     flex-direction: column;
-    font-weight: 700;
+    font-weight: 600;
     align-items: flex-start;
     color: #161642;
   }
@@ -491,19 +492,21 @@ footer .section1 .span {
 
   .frame-skill .frameworks {
     gap: vw;
-    width: 40vw;
+    width: 55vw;
     position: relative;
     border-bottom: 3px solid #e5e5e5;
   }
 
   .frame-skill .skills {
     gap: vw;
-    width: 40vw;
+    width: 55vw;
     position: relative;
     border-bottom: 3px solid #e5e5e5;
   }
 
   .form_section {
+    background-image: url(imgs/contact\ form\ background\ shapes.svg);
+    background-position: center center;
     width: 100vw;
   }
 
@@ -518,6 +521,22 @@ footer .section1 .span {
 
   .horizontal {
     display: none;
+  }
+
+  .get_my_resume {
+    min-width: 7vw;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .language_arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 53vw;
   }
 
   .see_project {
