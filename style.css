@@ -1,8 +1,8 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 :root {
   --blue: #6070ff;
+  --darkesh: #091e42;
 }
 
 * {
@@ -13,7 +13,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: #f4f5f7;
   overflow-x: hidden;
 }
 
@@ -21,7 +21,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 30px;
+  align-items: center;
   background-color: white;
   width: 100vw;
 }
@@ -35,12 +36,14 @@ header {
 }
 
 .headline_section {
-  background: url(/bg.png);
+  background: url(/bg.svg);
+  background-color: white;
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
   padding: 10px 20px 10px 50px;
-  border-radius: 0 0 20% 5%;
+  border-radius: 0 0 0% 5%;
   min-height: 70vh;
   align-items: flex-start;
   justify-content: center;
@@ -50,6 +53,7 @@ header {
 .headline_section h1 {
   padding-bottom: 20px;
   font-size: 3rem;
+  font-weight: 1000;
 }
 
 .headline_section p {
@@ -99,9 +103,10 @@ header {
   padding: 30px;
   justify-content: center;
   gap: 10px;
+  color: var(--darkesh);
 }
 
-.works .card img {
+.works .card-img img {
   width: 100%;
 }
 
@@ -109,6 +114,12 @@ header {
   display: flex;
   list-style: none;
   gap: 10px;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0 0 10px blue;
 }
 
 .works .card .second_list button {
@@ -136,12 +147,21 @@ footer {
   grid-template-rows: repeat(3/1fr);
   min-height: 60vh;
   background-color: white;
-  border-radius: 5% 20% 5% 5%;
+  border-radius: 0% 10% 5% 5%;
   margin-top: 20px;
   align-items: center;
   justify-content: center;
-  padding: 10px 10vw;
+  padding: 150px 10vw 150px 10vw;
   gap: 20px;
+}
+
+.icons {
+  color: #505f79;
+  font-size: 1.5em;
+}
+
+.fa {
+  padding-left: 10px;
 }
 
 footer .section1 .span {
@@ -156,37 +176,54 @@ footer .section1 .span {
   gap: 10px;
 }
 
+.section1 h3 {
+  font-size: 3em;
+  font-weight: 1000;
+}
+
+.section1 p {
+  display: inline;
+}
+
 .section2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
+.lang-div {
+  display: flex;
+  gap: 0;
+  padding-top: 30px;
+  flex-direction: column;
+}
+
+.section22 h3 {
+  color: #344563;
+  font-weight: 1000;
+}
+
 .lang {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  background-color: #e5e5e5;
+  background-color: #f7f7f9;
   border-radius: 12px;
   padding: 5px 10px;
   font-weight: 500;
+  width: 80%;
+  height: 15vh;
+  margin: 5px 0;
   gap: 20px;
 }
 
+.skills,
 .frameworks {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px 20px 0;
   border-bottom: 2px solid rgb(241, 235, 235);
   font-size: 20px;
-}
-
-.skills {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px 20px 0;
-  border-bottom: 2px solid rgb(241, 235, 235);
-  font-size: 20px;
-  margin-bottom: 300px;
 }
 
 .form_section {
@@ -229,36 +266,33 @@ footer .section1 .span {
 }
 
 #email {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
   border-radius: 5px;
   height: 48px;
-  width: 327px;
+  width: 447px;
   padding: 15px 38px 15px 16px;
   border-style: none;
 }
 
 #name {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
   color: #172b4d;
   border-radius: 5px;
   height: 48px;
-  width: 327px;
+  width: 447px;
   padding: 15px 38px 15px 16px;
   border-style: none;
 }
 
 #message {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 400;
   font-size: 17px;
-  width: 327px;
+  width: 447px;
   height: 200px;
   padding: 15px 38px 15px 16px;
   border-radius: 8px;
@@ -285,4 +319,230 @@ footer .section1 .span {
   border-radius: 10px;
   position: relative;
   top: 20px;
+}
+
+.Desktop_menu {
+  display: none;
+}
+
+/* media queries started  */
+@media screen and (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .Desktop_menu {
+    display: inline;
+  }
+
+  .Desktop_menu ul li {
+    font-weight: 500;
+  }
+
+  .logo {
+    font-weight: 1000;
+  }
+
+  header {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: bold;
+    gap: 30%;
+  }
+
+  .Desktop_menu ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+  .headline_section {
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 300px;
+    color: #091e42;
+    background-size: auto;
+    background-position: center center;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+  }
+
+  .headline_section p {
+    width: 50vw;
+    font-size: 1.2em;
+    color: var(--darkesh);
+    letter-spacing: 1px;
+  }
+
+  .card {
+    min-height: 30vh;
+    width: 65vw;
+  }
+
+  .card1,
+  .card3 {
+    display: grid;
+    grid-template-areas: 'image content-info';
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 140px;
+  }
+
+  .card2,
+  .card4 {
+    display: grid;
+    grid-template-areas: 'content-info image';
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 140px;
+  }
+
+  .dim_color_text {
+    color: #c1c7d0;
+  }
+
+  .card-info {
+    grid-area: content-info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 30vw;
+    color: #344563;
+    font-size: 1.1em;
+  }
+
+  .card-img {
+    width: 30vw;
+  }
+
+  .card-info h1 {
+    font-size: 2em;
+  }
+
+  .card-info p {
+    padding-right: 10%;
+  }
+
+  .card2 img,
+  .card4 img {
+    grid-area: image;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card2 .card-info,
+  .card4 .card-info {
+    grid-area: content-info;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+  }
+
+  .section1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .section2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .lang-div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .lang {
+    width: 122px;
+    height: 120px;
+    flex-direction: column;
+    font-weight: 600;
+    align-items: flex-start;
+    color: #161642;
+  }
+
+  .frame-skill {
+    width: 7vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .frame-skill .frameworks {
+    gap: vw;
+    width: 55vw;
+    position: relative;
+    border-bottom: 3px solid #e5e5e5;
+  }
+
+  .frame-skill .skills {
+    gap: vw;
+    width: 55vw;
+    position: relative;
+    border-bottom: 3px solid #e5e5e5;
+  }
+
+  .form_section {
+    background-image: url(imgs/contact\ form\ background\ shapes.svg);
+    background-position: center center;
+    width: 100vw;
+  }
+
+  .form_section p {
+    width: 38vw;
+  }
+
+  .form_button {
+    position: relative;
+    left: 1%;
+  }
+
+  .horizontal {
+    display: none;
+  }
+
+  .get_my_resume {
+    min-width: 7vw;
+    padding: 12px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    font-weight: 600;
+  }
+
+  .language_arrow {
+    display: flex;
+    justify-content: space-between;
+    width: 53vw;
+  }
+
+  .see_project {
+    padding: 10px 0;
+    font-weight: 500;
+    color: white;
+    background-color: var(--blue);
+  }
 }
