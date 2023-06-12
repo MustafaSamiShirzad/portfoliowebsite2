@@ -36,7 +36,7 @@ header {
 }
 
 .headline_section {
-  background: url(bg.svg);
+  background: url(./imgs/bg.svg);
   background-color: white;
   background-position: center center;
   background-size: cover;
