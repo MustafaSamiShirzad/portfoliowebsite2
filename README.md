@@ -45,9 +45,7 @@ click on here to reach me: https://github.com/MustafaSamiShirzad
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> As the project is in the inital stages after approval it will be live and a link will be added here
-
-
+> https://mustafasamishirzad.github.io/portfoliowebsite2/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
