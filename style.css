@@ -36,7 +36,7 @@ header {
 }
 
 .headline_section {
-  background: url(/bg.svg);
+  background: url(./bg.svg);
   background-color: white;
   background-position: center center;
   background-size: cover;
@@ -233,7 +233,7 @@ footer .section1 .span {
   justify-content: center;
   min-height: 80vh;
   background-color: var(--blue);
-  background-image: url(/imgs/contact\ form\ shapes-mobile.svg);
+  background-image: url(./imgs/contact\ form\ shapes-mobile.svg);
   background-repeat: no-repeat;
   background-position-x: right;
   border-radius: 10% 0% 0% 0%;
@@ -505,7 +505,7 @@ footer .section1 .span {
   }
 
   .form_section {
-    background-image: url(imgs/contact\ form\ background\ shapes.svg);
+    background-image: url(.imgs/contact\ form\ background\ shapes.svg);
     background-position: center center;
     width: 100vw;
   }
