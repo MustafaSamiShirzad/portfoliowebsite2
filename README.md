@@ -45,7 +45,7 @@ click on here to reach me: https://github.com/MustafaSamiShirzad
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> https://mustafasamishirzad.github.io/portfoliowebsite2/
+here is the live code preview: https://mustafasamishirzad.github.io/portfoliowebsite2/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
