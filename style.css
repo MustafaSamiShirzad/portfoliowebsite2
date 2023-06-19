@@ -3,6 +3,7 @@
 :root {
   --blue: #4053fc;
   --darkesh: #091e42;
+  --primary:#6070FF;
 }
 
 * {
@@ -81,6 +82,46 @@ header {
   cursor: pointer;
   text-shadow: 0 2px 20px;
 }
+/* mobile menu */
+.closing_menu_button ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: var(--primary); */
+  background-color: rgba(9, 34, 255, 0.793);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  width: 100vw;
+  backdrop-filter: blur(5px);
+  /* position: fixed; */
+  padding: 2% 5% ;
+  /* z-index: -1; */
+}
+.closing_menu_button ul li{
+  /* text-decoration: none; */
+  margin-bottom: 10%;
+  
+}
+.closing_menu_button ul li img{
+  position: absolute;
+  right: 8%;
+}
+
+.closing_menu_button ul li a{
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 800;
+  color:white;
+  position: absolute;
+  font-style:bold;
+  
+
+  
+}
+
 
 /* middle section */
 .works {
