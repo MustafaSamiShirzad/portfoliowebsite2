@@ -1,20 +1,20 @@
-# portfoliowebsite2 Desktop Version
+# Responsive Portfolio
 <a name="readme-top"></a>
 
 
 <div align="center">
   
 
-  <h3><b>Portifolio Desktop Website2 README.md</b></h3>
+  <h3><b>Responsive Portfolio README.md</b></h3>
 
 </div>
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Portifolio Desktop Website \] ](#-portifolio-Desktop-website2---)
-  - [🛠 Built With **HTML and CSS**](#-built-with-html-and-css)
-    - [Tech Stack **HTML and CSS**](#tech-stack-html-and-css)
+- [📖 \[Responsive Portfolio \] ](#-portifolio-Mobile-Menu---)
+  - [🛠 Built With **HTML, CSS and Javascript**](#-built-with-html-and-css)
+    - [Tech Stack **HTML,  CSS and Javascript**](#tech-stack-html-and-css)
     - [Key Features ](#key-features-)
       - [🚀 Live Demo](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
@@ -30,16 +30,16 @@
   - [📝 License ](#-license-)
 
 
-# 📖 [Portifolio Desktop Website ] <a name="about-project"></a>
-**Portifolio Desktop Website2** is a project under microverse Module 1 block ! aimed at testing my knowledge about the concepts learnt and to help me build a website to display my work so that I stand out in the Job market.
+# 📖 [Responsive Portfolio ] <a name="about-project"></a>
+**Responsive Portfolio** is a project under microverse Module 1 block ! aimed at testing my knowledge about the concepts learnt and to help me build a website to display my work so that I stand out in the Job market.
 This project is meant to run on all devices but this in particular is a mobile version of it.
 
 click on here to reach me: https://github.com/MustafaSamiShirzad
 
 
-## 🛠 Built With **HTML and CSS**
+## 🛠 Built With **HTML, CSS and Javascript**
 
-### Tech Stack **HTML and CSS**
+### Tech Stack **HTML, CSS and Javascript **
 ### Key Features <a name="key-features"></a>
 - **Contains information about me and the services I offer in the software development world**
 
@@ -79,7 +79,7 @@ To run the project, execute the following command:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **MustafaShirzad**
+👤**Mustafa shirzad**
 
 - GitHub: @Mustafashirzad
 
@@ -87,12 +87,18 @@ To run the project, execute the following command:
 
 - GitHub: @mahammad-mostafa
 
+👤 **Iván Gonzalez**
+
+- GitHub: @ivangonzalez224
+
 
 If you like this project like it and give us a follow.
 
 ## 🤝 Contributing <a name="contributing"></a>
+**Mahammad Mostafa**
+**Iván Gonzalez**
+**Mustafa shirzad**
 
-It was a solo project so All was done by me.
 
 Feel free to check the [issues page](../../issues/).
 
