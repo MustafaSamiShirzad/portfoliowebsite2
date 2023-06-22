@@ -18,6 +18,84 @@ body {
   overflow-x: hidden;
 }
 
+/* popup 2 */
+.popupwindow {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background-color: rgba(113, 81, 81, 0.11);
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: scroll;
+}
+
+.popupwindowElement {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5%;
+  padding: 5%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  z-index: 10;
+  position: relative;
+  overflow-y: scroll;
+  height: 95vh;
+}
+
+.popupwindowElement img {
+  /* height: 200px; */
+  max-width: 98%;
+}
+
+.Live_project {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  border-top: 1px solid  #c1c7d0;
+  padding-top: 10px;
+}
+
+.live_project_btn {
+  width: 50%;
+
+  /* margin: 5%; */
+  background-color: white;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 8px;
+}
+
+.live_project_btn a {
+  text-decoration: none;
+}
+
+/* closing button for the pop window */
+.closingBtn {
+  border: none;
+  background-color: white;
+  font-weight: 600;
+  cursor: pointer;
+  color: #c1c7d0;
+  font-size: 25px;
+  position: absolute;
+  border-radius: 40px;
+  right: 10%;
+  top: 5%;
+}
+
 /* header section */
 header {
   display: flex;
@@ -119,10 +197,6 @@ header {
   margin-bottom: 15%;
 }
 
-.closing_menu_button ul li img:hover {
-  transform: scale(1.2);
-}
-
 .closing_menu_button ul li a {
   text-decoration: none;
   font-size: 2rem;
@@ -130,6 +204,19 @@ header {
   color: white;
   position: absolute;
   font-style: bold;
+}
+
+.live_project_btn:hover {
+  background-color: #7e84bd;
+}
+
+.live_project_btn a:hover {
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+.closing_menu_button ul li img:hover {
+  transform: scale(1.2);
 }
 
 /* middle section */
@@ -156,7 +243,7 @@ header {
   color: var(--darkesh);
 }
 
-.works .card .first_list {
+.first_list {
   display: flex;
   list-style: none;
   gap: 10px;
@@ -168,7 +255,7 @@ button:hover {
   box-shadow: 0 0 10px blue;
 }
 
-.works .card .second_list button {
+.second_listbtn {
   background-color: #ebebff;
   border: none;
   padding: 5px 10px;
@@ -185,6 +272,7 @@ button:hover {
   background-color: white;
   color: var(--blue);
   padding: 5px 0;
+  cursor: pointer;
 }
 
 /* footer */
@@ -414,6 +502,8 @@ footer .section1 .span {
     font-weight: 1000;
   }
 
+  /* pop up menu desktop */
+
   header {
     height: 12vh;
     display: flex;
@@ -606,5 +696,79 @@ footer .section1 .span {
     font-weight: 500;
     color: white;
     background-color: var(--blue);
+  }
+
+  .popupwindow {
+    width: 100vw;
+    min-height: 100vh;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .popupwindowElement {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    z-index: 10;
+    gap: 20px;
+    overflow: hidden;
+  }
+
+  .desktopPopup {
+    display: flex;
+    width: 100vw;
+    gap: 10%;
+    padding-top: 20px;
+  }
+
+  .desktopPopup p {
+    width: 80vw;
+  }
+
+  .uls {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popupwindowElement img {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+
+  .popupwindowElement p {
+    width: 50vw;
+  }
+
+  .Live_project {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 20vw;
+    border-top: 1 px solid blue;
+  }
+
+  .popupwindowElement .live_project_btn {
+    width: 70%;
+    height: 50%;
+    padding: 15px 5px;
+  }
+
+  .popupwindowElement .Live_project button img {
+    width: 20px;
+    height: 20px;
   }
 }
