@@ -522,6 +522,13 @@ closebtn.addEventListener('click', () => {
   document.querySelector('.frame-skill').style.display = 'flex';
 });
 
+const userEmailBox = document.getElementById('EmailValidation');
+
 document.querySelector("#FormValidation").addEventListener("submit",(e)=>{
-  
+  // event.preventDefault();
+  const emailValidation = userEmailBox.value.toLowerCase();
+  if (userEmailBox.value !== emailValidation) {
+    event.preventDefault();
+    document.querySelector('.ErrorCounter').innerHTML = 'Please enter a valid email, it should be in lowercase only';
+  }  
 })
