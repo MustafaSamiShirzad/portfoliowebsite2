@@ -521,3 +521,7 @@ closebtn.addEventListener('click', () => {
   document.querySelector('.form_button').style.display = 'block';
   document.querySelector('.frame-skill').style.display = 'flex';
 });
+
+document.querySelector("#FormValidation").addEventListener("submit",(e)=>{
+  
+})

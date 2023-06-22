@@ -124,14 +124,15 @@
                 that needs coding.
                 I’d love to help with it!
             </p>
-            <form action="https://formspree.io/f/mknalqrn" class="form" method="post">
+            <form action="https://formspree.io/f/mknalqrn" class="form" id="FormValidation" method="post">
                 <label for="name"></label>
                 <input name="name" id="name" type="text" required maxlength="30" placeholder="Name">
                 <label for="email"></label>
-                <input name="Email" id="email" type="email" required placeholder="Email">
+                <input name="Email" id="EmailValidation" type="email" required placeholder="Email">
                 <label for="message"></label>
                 <textarea name="message" id="message" type="text" maxlength="500"
                     placeholder="Write your message here..."></textarea>
+                    <small class="ErrorCounter"></small>
                 <button type="submit" class="form_button">Get in touch</button>
             </form>
         </section>
