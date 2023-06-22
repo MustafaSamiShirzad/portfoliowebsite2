@@ -16,6 +16,12 @@ const obj = {
     '/imgs/Snapshoot Portfolio(1).png', '/imgs/Snapshoot Portfolio22.png', '/imgs/Snapshoot Portfolio(3).png', '/imgs/Snapshoot Portfolio(2).png',
 
   ],
+  technologies: [
+    'HTML', 'CSS', 'JavaScript',
+  ],
+  link: [
+    'http://127.0.0.1:3002/index.html',
+  ],
 };
 
 // cards section start from here
