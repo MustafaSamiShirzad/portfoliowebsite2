@@ -76,8 +76,6 @@ body {
   text-decoration: none;
 }
 
-
-
 /* closing button for the pop window */
 .closingBtn {
   border: none;
@@ -214,7 +212,6 @@ header {
 .closing_menu_button ul li img:hover {
   transform: scale(1.2);
 }
-
 
 /* middle section */
 .works {
