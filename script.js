@@ -16,6 +16,12 @@ const obj = {
     '/imgs/Snapshoot Portfolio(1).png', '/imgs/Snapshoot Portfolio22.png', '/imgs/Snapshoot Portfolio(3).png', '/imgs/Snapshoot Portfolio(2).png',
 
   ],
+  details: [
+    'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required',
+    'lorem ipsum A daily selection of privately personalized reads; no accounts or sign-ups required',
+  ],
   technologies: [
     'HTML', 'CSS', 'JavaScript',
   ],

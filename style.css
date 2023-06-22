@@ -21,15 +21,18 @@ body {
 /* popup 2 */
 .popupwindow {
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   display: none;
   background-color: rgba(113, 81, 81, 0.11);
   backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
+  overflow-y: scroll;
 }
 
 .popupwindowElement {
@@ -37,11 +40,14 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 5%;
-  padding: 5% 5%;
+  padding: 5%;
   width: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   z-index: 10;
+  position: relative;
+  overflow-y: scroll;
+  height: 95vh;
 }
 
 .popupwindowElement img {
@@ -717,6 +723,7 @@ footer .section1 .span {
     border-radius: 10px;
     z-index: 10;
     gap: 20px;
+    overflow: hidden;
   }
 
   .desktopPopup {
