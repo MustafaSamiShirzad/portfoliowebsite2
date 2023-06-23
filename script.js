@@ -39,7 +39,7 @@ const cardImageContainer1 = document.createElement('div');
 cardImageContainer1.className = 'card-img';
 // Create the card image element
 const cardImage1 = document.createElement('img');
-cardImage1.src = '/imgs/Snapshoot Portfolio(2).png';
+cardImage1.src = './imgs/Snapshoot Portfolio(2).png';
 cardImage1.alt = 'Tonic';
 // Append the image to the image container
 cardImageContainer1.appendChild(cardImage1);
@@ -115,7 +115,7 @@ cardContainer2.className = 'card2 card';
 const cardImage2 = document.createElement('div');
 cardImage2.className = 'card-img';
 const image2 = document.createElement('img');
-image2.src = '/imgs/Snapshoot Portfolio(3).png';
+image2.src = './imgs/Snapshoot Portfolio(3).png';
 image2.alt = 'Multi-Post Stories';
 cardImage2.appendChild(image2);
 
@@ -202,7 +202,7 @@ cardImgDiv3.classList.add('card-img');
 
 // Create image element
 const imageElement3 = document.createElement('img');
-imageElement3.src = '/imgs/Snapshoot Portfolio22.png';
+imageElement3.src = './imgs/Snapshoot Portfolio22.png';
 imageElement3.alt = 'Facebook 360';
 
 // Append image element to card image div
@@ -295,7 +295,7 @@ cardDiv4.classList.add('card4', 'card');
 const cardImgDiv4 = document.createElement('div');
 cardImgDiv4.classList.add('card-img');
 const cardImg4 = document.createElement('img');
-cardImg4.src = '/imgs/Snapshoot Portfolio(1).png';
+cardImg4.src = './imgs/Snapshoot Portfolio(1).png';
 cardImg4.alt = 'Multi-Post Stories';
 
 // Append the image element to the image div, and the image div to the main container div
@@ -404,7 +404,7 @@ listItem3pop.classList.add('dim_color_text');
 listItem3pop.innerHTML = '&#9679; 2015';
 
 const imagepop = document.createElement('img');
-imagepop.src = '/imgs/Snapshoot Portfolio(2).png';
+imagepop.src = './imgs/Snapshoot Portfolio(2).png';
 imagepop.alt = 'Tonic';
 
 const desktopPopuppop = document.createElement('div');
@@ -440,7 +440,7 @@ const liveProjectLink1pop = document.createElement('a');
 liveProjectLink1pop.href = 'https://mustafasamishirzad.github.io/portfoliowebsite2/';
 liveProjectLink1pop.textContent = 'See Live';
 const liveProjectImg1pop = document.createElement('img');
-liveProjectImg1pop.src = 'imgs/Icon - Export.svg';
+liveProjectImg1pop.src = '.imgs/Icon - Export.svg';
 liveProjectImg1pop.alt = '';
 
 const liveProjectBtn2pop = document.createElement('button');
@@ -449,7 +449,7 @@ const liveProjectLink2pop = document.createElement('a');
 liveProjectLink2pop.href = 'https://github.com/MustafaSamiShirzad/Portifoliowebsite2.git';
 liveProjectLink2pop.textContent = 'See Source';
 const liveProjectImg2pop = document.createElement('img');
-liveProjectImg2pop.src = 'imgs/Icon -GitHub.svg';
+liveProjectImg2pop.src = '.imgs/Icon -GitHub.svg';
 liveProjectImg2pop.alt = 'icon';
 
 // Append the elements to the DOM hierarchy
@@ -525,7 +525,6 @@ closebtn.addEventListener('click', () => {
 const userEmailBox = document.getElementById('EmailValidation');
 
 document.querySelector('#FormValidation').addEventListener('submit', (event) => {
-  // event.preventDefault();
   const emailValidation = userEmailBox.value.toLowerCase();
   if (userEmailBox.value !== emailValidation) {
     event.preventDefault();
