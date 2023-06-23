@@ -4,6 +4,11 @@ const menuHamburger = document.querySelector('.menu');
 const navMainBar = document.querySelector('.nav_main_bar');
 const navMenuOptions = document.querySelectorAll('.nav_menu_options');
 const MainSection = document.querySelector('#work_card_section');
+const nameInput=document.querySelector("#name");
+const messageInput=document.querySelector("#message");
+const emailInput=document.querySelector("#EmailValidation");
+
+
 
 const obj = {
   names: [
@@ -531,3 +536,45 @@ document.querySelector('#FormValidation').addEventListener('submit', (event) => 
     document.querySelector('.ErrorCounter').innerHTML = 'Please enter a valid email, it should be in lowercase only';
   }
 });
+
+//Creating An object for storing Values
+let FormObj = {
+  username:' ',
+  useremail:' ',
+  usermessage:' '
+}
+
+//function for storing data in the brower
+
+function storeData(e){
+  let value = e.value.toLowerCase();
+  if(localStorage)
+  {
+    if(e.id ==='name')
+    {
+      FormObj.username = e.value;
+      localStorage.setItem("userName", FormObj.username);
+    }else if(e.id === 'EmailValidation' && e.value === value)
+    {
+      FormObj.useremail = e.value;
+      localStorage.setItem("userEmail", FormObj.useremail);
+    }else if(e.id==='message')
+    {
+      FormObj.usermessage = e.value;
+      localStorage.setItem("userMessage", FormObj.usermessage);
+    }
+  }
+  console.log(e.id);
+  
+
+}
+
+nameInput.addEventListener("input", e=>{
+  storeData(e.target);
+})
+messageInput.addEventListener("input", e=>{
+  storeData(e.target);
+})
+emailInput.addEventListener("input", e=>{
+  storeData(e.target);
+})
