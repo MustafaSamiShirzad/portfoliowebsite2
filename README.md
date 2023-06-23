@@ -83,9 +83,6 @@ To run the project, execute the following command:
 
 - GitHub: @Mustafashirzad
 
-👤 **Mahammad Mostafa**
-
-- GitHub: @mahammad-mostafa
 
 👤 **Iván Gonzalez**
 
