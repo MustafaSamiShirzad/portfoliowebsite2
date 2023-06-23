@@ -4,11 +4,9 @@ const menuHamburger = document.querySelector('.menu');
 const navMainBar = document.querySelector('.nav_main_bar');
 const navMenuOptions = document.querySelectorAll('.nav_menu_options');
 const MainSection = document.querySelector('#work_card_section');
-const nameInput=document.querySelector("#name");
-const messageInput=document.querySelector("#message");
-const emailInput=document.querySelector("#EmailValidation");
-
-
+const nameInput = document.querySelector('#name');
+const messageInput = document.querySelector('#message');
+const emailInput = document.querySelector('#EmailValidation');
 
 const obj = {
   names: [
@@ -537,44 +535,48 @@ document.querySelector('#FormValidation').addEventListener('submit', (event) => 
   }
 });
 
-//Creating An object for storing Values
-let FormObj = {
-  username:' ',
-  useremail:' ',
-  usermessage:' '
-}
+// Creating An object for storing Values
+const FormObj = {
+  username: ' ',
+  useremail: ' ',
+  usermessage: ' ',
+};
+window.onload = () => {
+  if (localStorage.getItem('userName') !== 'undefined' || localStorage.getItem('userName') !== 'null') {
+    nameInput.value = localStorage.getItem('userName');
+  }
+  if (localStorage.getItem('userEmail') !== 'undefined' || localStorage.getItem('userEmail') !== 'null') {
+    emailInput.value = localStorage.getItem('userEmail');
+  }
+  if (localStorage.getItem('userMessage') !== 'undefined' || localStorage.getItem('userMessage') !== 'null') {
+    messageInput.value = localStorage.getItem('userMessage');
+  }
+};
 
-//function for storing data in the brower
+// function for storing data in the brower
 
-function storeData(e){
-  let value = e.value.toLowerCase();
-  if(localStorage)
-  {
-    if(e.id ==='name')
-    {
+function storeData(e) {
+  const value = e.value.toLowerCase();
+  if (localStorage) {
+    if (e.id === 'name') {
       FormObj.username = e.value;
-      localStorage.setItem("userName", FormObj.username);
-    }else if(e.id === 'EmailValidation' && e.value === value)
-    {
+      localStorage.setItem('userName', FormObj.username);
+    } else if (e.id === 'EmailValidation' && e.value === value) {
       FormObj.useremail = e.value;
-      localStorage.setItem("userEmail", FormObj.useremail);
-    }else if(e.id==='message')
-    {
+      localStorage.setItem('userEmail', FormObj.useremail);
+    } else if (e.id === 'message') {
       FormObj.usermessage = e.value;
-      localStorage.setItem("userMessage", FormObj.usermessage);
+      localStorage.setItem('userMessage', FormObj.usermessage);
     }
   }
-  console.log(e.id);
-  
-
 }
 
-nameInput.addEventListener("input", e=>{
+nameInput.addEventListener('input', (e) => {
   storeData(e.target);
-})
-messageInput.addEventListener("input", e=>{
+});
+messageInput.addEventListener('input', (e) => {
   storeData(e.target);
-})
-emailInput.addEventListener("input", e=>{
+});
+emailInput.addEventListener('input', (e) => {
   storeData(e.target);
-})
+});
