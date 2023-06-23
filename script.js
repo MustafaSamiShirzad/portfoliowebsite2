@@ -576,5 +576,5 @@ messageInput.addEventListener("input", e=>{
   storeData(e.target);
 })
 emailInput.addEventListener("input", e=>{
-  storeData(e.target);
+  storeData(e.targ);
 })
